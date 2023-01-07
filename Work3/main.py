@@ -1,4 +1,4 @@
 
 
-for i in range(1, 5):
-    print("btn",i)
+for i in range(2, 5):
+    print("lblq"+ str(i) + ",", end=' ')
