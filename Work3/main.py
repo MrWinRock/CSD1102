@@ -1,4 +1,2 @@
-
-
-for i in range(2, 5):
-    print("lblq"+ str(i) + ",", end=' ')
+a = 1600 * 6
+print(a)
