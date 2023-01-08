@@ -82,25 +82,45 @@ public class Work5 extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        int num, tax;
+        double inP = 0, tax = 0, total = 0;
+        String msg = "", taxPer = "";
+        inP = Double.parseDouble(inF.getText());
         
         if(e.getSource() == submitBtn) {
             if(rb1.isSelected()) {
-                
+                tax = inP * 0.03;
+                total = inP - tax;
+                msg = "ธนาคาร";
+                taxPer = "3.0";
             }
             if(rb2.isSelected()) {
-
+                tax = inP * 0.025;
+                total = inP - tax;
+                msg = "ประกันชีวิต";
+                taxPer = "2.5";
             }
             if(rb3.isSelected()) {
-
+                tax = inP * 0.001;
+                total = inP - tax;
+                msg = "ตลาดหลักทรัพย์";
+                taxPer = "0.1";
             }
             if(rb4.isSelected()) {
-
+                tax = inP * 0.01;
+                total = inP - tax;
+                msg = "อสังหาริมทรัพย์";
+                taxPer = "1.0";
             }
             if(rb5.isSelected()) {
-
+                tax = inP * 0.05;
+                total = inP - tax;
+                msg = "ประเภทอื่นๆ";
+                taxPer = "5.0";
             }
         }
+
+        JOptionPane.showMessageDialog(this, "โปรแกรมคำนวณภาษี\n\nจำนวนเงินที่จะคำนวณ = " + (int) inP + "\nประเภทกิจการ = " + msg + "\nภาษีร้อยละ " + taxPer + " = " + (int) total, getTitle(), JOptionPane.PLAIN_MESSAGE, null);
+
     }
 
     public void setUIFont(javax.swing.plaf.FontUIResource f) {

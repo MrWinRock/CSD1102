@@ -25,16 +25,16 @@ public class Work3 extends JFrame implements ActionListener {
         lbl3 = new JLabel("3) แพคเกจทัวร์ประเทศโปแลนด์ ราคา 48,000 บาท / คน");
         lbl4 = new JLabel("4) แพคเกจทัวร์ประเทศโมนาโก ราคา 47,000 บาท / คน");
         lbl5 = new JLabel("5) แพคเกจทัวร์ประเทศสเปน ราคา 46,000 บาท / คน");
-        lblq1 = new JLabel("จำนวน");
-        lblq2 = new JLabel("จำนวน");
-        lblq3 = new JLabel("จำนวน");
-        lblq4 = new JLabel("จำนวน");
-        lblq5 = new JLabel("จำนวน");
         lbl6 = new JLabel("");
         lbl7 = new JLabel("");
         lbl8 = new JLabel("");
         lbl9 = new JLabel("");
         lbl10 = new JLabel("");
+        lblq1 = new JLabel("จำนวน                 คน");
+        lblq2 = new JLabel("จำนวน                 คน");
+        lblq3 = new JLabel("จำนวน                 คน");
+        lblq4 = new JLabel("จำนวน                 คน");
+        lblq5 = new JLabel("จำนวน                 คน");
         sumLbl = new JLabel("");
 
         // สร้าง JTextField
@@ -54,16 +54,16 @@ public class Work3 extends JFrame implements ActionListener {
         lbl3.setBounds(120, 246, 325, 29);
         lbl4.setBounds(120, 294, 325, 29);
         lbl5.setBounds(120, 337, 325, 29);
-        lblq1.setBounds(535, 153, 100, 27);
-        lblq2.setBounds(535, 198, 100, 27);
-        lblq3.setBounds(535, 248, 100, 27);
-        lblq4.setBounds(535, 290, 100, 27);
-        lblq5.setBounds(535, 338, 100, 27);
         lbl6.setBounds(120, 527, 700, 29);
         lbl7.setBounds(120, 564, 700, 29);
         lbl8.setBounds(120, 597, 700, 29);
         lbl9.setBounds(120, 631, 700, 29);
         lbl10.setBounds(120, 664, 700, 29);
+        lblq1.setBounds(530, 153, 300, 27);
+        lblq2.setBounds(530, 198, 300, 27);
+        lblq3.setBounds(530, 248, 300, 27);
+        lblq4.setBounds(530, 290, 300, 27);
+        lblq5.setBounds(530, 338, 300, 27);
         sumLbl.setBounds(385, 707, 162, 27);
 
         // พื้นที่ JButton
