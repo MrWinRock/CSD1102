@@ -1,0 +1,9 @@
+Monitor
+2
+3500
+Notebook
+1
+15000
+Hard Disk
+3
+1500
