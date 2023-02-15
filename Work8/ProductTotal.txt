@@ -1,7 +1,1 @@
 Product Name 	Unit	Price	total
-Monitor			2	3500	7000
-Notebook			1	15000	22000
-Hard Disk			3	1500	26500
-	Total			26500
-	Vat 7%			1855.0000000000002
-	Total Price		28355.0

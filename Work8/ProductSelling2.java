@@ -3,6 +3,10 @@ import java.io.*;
 
 public class ProductSelling2 {
     public static void main(String[] args) throws IOException {
+        new ProductSelling2();
+    }
+
+    public ProductSelling2() throws IOException {
         writeFile();
     }
 
@@ -12,7 +16,6 @@ public class ProductSelling2 {
         String[][] baseData = data[0];
         String[][] totalPrice = data[1];
 
-        
         String productName;
         int quantity, price, totalEach;
 
@@ -28,8 +31,7 @@ public class ProductSelling2 {
                 price = Integer.parseInt(baseData[i][2]);
                 totalEach = Integer.parseInt(baseData[i][3]);
 
-                outputFile.println(productName +"\t\t\t"+ quantity +"\t"+ price +"\t"+ totalEach
-                );
+                outputFile.println(productName + "\t\t\t " + quantity + "\t\t" + price + "\t" + totalEach);
             }
         } catch (Exception e) {
             e.getMessage();
@@ -56,19 +58,16 @@ public class ProductSelling2 {
         while (scanner.hasNext()) {
             for (int j = 0; j < 3; j++) {
                 String data = scanner.nextLine();
-                if (data == null || data.isEmpty())
-                    product[i][j] = "";
-                else
-                    product[i][j] = data;
+                product[i][j] = data;
                 if (j == 2)
                     i++;
             }
         }
 
         // for (int k = 0; k < product.length; k++) {
-        // for (int j = 0; j < 3; j++) {
-        // System.out.println(product[k][j]);
-        // }
+        //     for (int j = 0; j < 3; j++) {
+        //         System.out.println(product[k][j]);
+        //     }
         // }
 
         scanner.close();

@@ -3,6 +3,10 @@ import java.io.*;
 
 public class ProductSelling1 {
     public static void main(String[] args) throws IOException{
+        new ProductSelling1();
+    }
+
+    public ProductSelling1() throws IOException {
         writeFile();
     }
     
