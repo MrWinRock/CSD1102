@@ -15,7 +15,7 @@ public class GradeRecordSystem1 {
         Scanner input = new Scanner(System.in);
         
         String fileName, subject, grade;
-        int credit;
+        double credit;
         
         System.out.print("Enter Number of Subject: ");
         int sub = input.nextInt();
@@ -34,7 +34,7 @@ public class GradeRecordSystem1 {
             outputFile.println(subject); 
 
             System.out.print("Enter credit of Subject " + i + ": ");
-            credit = input.nextInt(); 
+            credit = input.nextDouble(); 
             input.nextLine();
             outputFile.println(credit); 
 
