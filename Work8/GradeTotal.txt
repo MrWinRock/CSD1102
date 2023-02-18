@@ -1,1 +1,1 @@
-Average Grade = 3.63
+Grade Point Average = 3.78

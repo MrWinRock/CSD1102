@@ -22,7 +22,7 @@ public class ProductSelling2 {
         FileWriter fWriter = new FileWriter("ProductTotal.txt");
         PrintWriter outputFile = new PrintWriter(fWriter);
 
-        outputFile.println("Product Name \tUnit\tPrice\ttotal");
+        outputFile.println("Product Name | Unit | Price | total");
 
         try {
             for (int i = 0; i < baseData.length; i++) {
@@ -31,15 +31,15 @@ public class ProductSelling2 {
                 price = Integer.parseInt(baseData[i][2]);
                 totalEach = Integer.parseInt(baseData[i][3]);
 
-                outputFile.println(productName + "\t\t\t " + quantity + "\t\t" + price + "\t" + totalEach);
+                outputFile.println(productName + "\t" + quantity + "\t" + price + "\t" + totalEach);
             }
         } catch (Exception e) {
             e.getMessage();
         }
 
-        outputFile.println("\tTotal\t\t\t" + totalPrice[0][0]);
-        outputFile.println("\tVat 7%\t\t\t" + totalPrice[0][1]);
-        outputFile.println("\tTotal Price\t\t" + totalPrice[0][2]);
+        outputFile.println("Total\t" + totalPrice[0][0]);
+        outputFile.println("Vat 7%\t" + totalPrice[0][1]);
+        outputFile.println("Total Price\t" + totalPrice[0][2]);
 
         outputFile.close();
     }

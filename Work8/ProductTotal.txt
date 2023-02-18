@@ -1,1 +1,8 @@
-Product Name 	Unit	Price	total
+Product Name | Unit | Price | total
+Computer	2	50000	100000
+Keyboard	2	3000	106000
+Mouse	2	2000	110000
+Monitor	2	5000	120000
+Total	120000
+Vat 7%	8400.0
+Total Price	128400.0
