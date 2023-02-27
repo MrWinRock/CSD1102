@@ -87,7 +87,6 @@ public class GradeRecordSystem2 {
                 System.out.println(avgGradeEach);
             }
 
-            
         } catch (Exception e) {
             e.getMessage();
         }
@@ -95,7 +94,6 @@ public class GradeRecordSystem2 {
         avgGrade /= totalCredit;
         DecimalFormat df = new DecimalFormat("0.00");
         System.out.println(df.format(avgGrade));
-
 
         return df.format(avgGrade);
     }

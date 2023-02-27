@@ -1,0 +1,5 @@
+Monitor,10,3500
+Notebook,20,2000
+Keyboard,5,300
+Mouse,15,250
+Computer,15,30000
