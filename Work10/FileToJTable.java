@@ -50,13 +50,15 @@ public class FileToJTable {
                 product.setPrice(splitData[2]);
                 product.calcSum();
 
+                
                 productList.add(product);
             }
-
+            
             int sumTotal = 0;
             for (Product product : productList) {
                 String sum = product.calcSum();
                 if (sum != null) {
+                    System.out.println(sum);
                     int sumI = Integer.parseInt(sum);
                     sumTotal += sumI;
                 }
